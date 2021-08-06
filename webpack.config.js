@@ -30,6 +30,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: ['@babel/polyfill', './index.js'],
+  target: process.env.NODE_ENV === 'development' ? 'web' : 'browserslist',
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist'),
@@ -75,7 +76,6 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-
             },
           },
           'css-loader',
