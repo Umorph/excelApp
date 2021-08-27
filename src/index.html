@@ -13,7 +13,6 @@
 <body>
   <div class="container" id="app">
     <div class="excel">
-
       <div class="excel__header">
         <input class="input" type="text" value="Новая таблица">
         <div>
@@ -25,7 +24,6 @@
           </div>
         </div>
       </div>
-
       <div class="excel__toolbar">
         <div class="button">
           <span class="material-icons">format_align_left</span>
@@ -46,16 +44,47 @@
           <span class="material-icons">format_underline</span>
         </div>
       </div>
-
       <div class="excel__formula">
         <div class="info">fx</div>
         <div class="input" contenteditable="true" spellcheck="false"></div>
       </div>
 
       <div class="excel__table">
-
+        <div class="row">
+          <div class="row-info"></div>
+          <div class="row-data">
+            <div class="column">
+              A
+            </div>
+            <div class="column">
+              B
+            </div>
+            <div class="column">
+              C
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-info">
+            1
+          </div>
+          <div class="row-data">
+            <div class="cell selected" contenteditable="true">A1</div>
+            <div class="cell" contenteditable="true">B1</div>
+            <div class="cell" contenteditable="true">C1</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-info">
+            2
+          </div>
+          <div class="row-data">
+            <div class="cell" contenteditable="true">A2</div>
+            <div class="cell" contenteditable="true">B2</div>
+            <div class="cell" contenteditable="true">C2</div>
+          </div>
+        </div>
       </div>
-
     </div>
   </div>
 </body>
