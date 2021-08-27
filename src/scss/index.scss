@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "~normalize.css";
+
+@import "variables";
+@import "mixins";
+@import "scaffolding";
+
+@import "header";
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
+@import "dashboard";
+
+.excel {
+  position: relative;
+
+  height: 100%;
+  max-width: 100%;
+
+  font-size: 0.8rem;
+
+  color: #888888;
+}
