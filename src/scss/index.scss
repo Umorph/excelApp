@@ -5,6 +5,12 @@
 @import "mixins";
 @import "scaffolding";
 
+@import "header";
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
+
 .excel {
   position: relative;
 }
