@@ -18,7 +18,7 @@
     height: $row-height;
   }
 
-  & .row-info {
+  & .row__info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
     background: #f8f9fa;
   }
 
-  & .row-data {
+  & .row__data {
     display: flex;
   }
 
