@@ -9,7 +9,9 @@
     "semi": "off",
     "linebreak-style": "off",
     "require-jsdoc": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+		"indent": "off",
+		"no-tabs": ["error", { "allowIndentationTabs": true }]
   },
   "extends": ["eslint:recommended", "google"]
 }
