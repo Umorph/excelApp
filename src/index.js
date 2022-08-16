@@ -3,12 +3,13 @@ import {Header} from '@/components/header/Header'
 import {Toolbar} from '@/components/toolbar/Toolbar'
 import {Formula} from '@/components/formula/Formula'
 import {Table} from '@/components/table/Table'
-import './scss/index.scss'
 import {createStore} from '@core/createStore'
 import {rootReducer} from '@/redux/rootReducer'
 import {storage} from '@core/utils'
+import './scss/index.scss'
+import {initialState} from '@/redux/initialState'
 
-const store = createStore(rootReducer, storage('excel-state'))
+const store = createStore(rootReducer, initialState)
 
 store.subscribe((state) => {
 	console.log('App state - ', state)
