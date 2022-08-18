@@ -18,49 +18,41 @@ function toButton(button) {
 	`
 }
 
-export function createToolbar() {
+export function createToolbar(state) {
 	const buttons = [
 		{
+			value: {textAlign: 'left'},
 			icon: 'format_align_left',
-			active: false,
-			value: {
-				textAlign: 'left',
-			},
+			active: state['textAlign'] === 'left',
 		},
 		{
+			value: {textAlign: 'center'},
 			icon: 'format_align_center',
-			active: true,
-			value: {
-				textAlign: 'center',
-			},
+			active: state['textAlign'] === 'center',
 		},
 		{
+			value: {textAlign: 'right'},
 			icon: 'format_align_right',
-			active: false,
-			value: {
-				textAlign: 'right',
-			},
+			active: state['textAlign'] === 'right',
 		},
 		{
+			value: {fontWeight: state['fontWeight'] === 'bold' ? 'normal' : 'bold'},
 			icon: 'format_bold',
-			active: true,
-			value: {
-				fontWeight: 'bold',
-			},
+			active: state['fontWeight'] === 'bold',
 		},
 		{
+			value: {fontStyle: state['fontStyle'] === 'italic' ? 'normal' : 'italic'},
 			icon: 'format_italic',
-			active: false,
-			value: {
-				fontStyle: 'italic',
-			},
+			active: state['fontStyle'] === 'italic',
 		},
 		{
-			icon: 'format_underline',
-			active: false,
 			value: {
-				textDecoration: 'underline',
+				textDecoration: state['textDecoration'] === 'underline'
+					? 'none'
+					: 'underline',
 			},
+			icon: 'format_underline',
+			active: state['textDecoration'] === 'underline',
 		},
 	]
 	return buttons.map(toButton).join('')
